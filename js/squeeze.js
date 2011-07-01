@@ -33,7 +33,7 @@ var changeSqueeze = function(){
 };
 
 var getRawCopy = function(){
-  var rows = " | # | Part Number | Quantity | Price | Spent | Part Attached? |"
+  var rows = " | # | Part Number | Quantity | Price | Spent | Part Attached? | ";
   $("table tbody tr").each(function(idx,row){
     var $row = $(row);
     var num 	    = $row.find("td > span.num").html();
@@ -44,8 +44,7 @@ var getRawCopy = function(){
     var attached 	= $row.find("td > input[type='checkbox']").attr("checked");
     // Make sure there is valid information in this row...
     if (!isNaN(parseFloat(qty)) && !isNaN(parseFloat(price))) {
-      console.log("Yeah, this one is good");
-      rows += rows + "\n" +
+      rows += "\n" +
       " | " + num +
       " | " + id +
       " | " + qty +
@@ -53,8 +52,6 @@ var getRawCopy = function(){
       " | " + spent +
       " | " + (attached ? "Yes" : "No") + 
       " | ";
-    } else {
-      console.log("NO GOOD!");
     }
   });
   return rows;
@@ -84,8 +81,7 @@ $(document).ready(function(){
 
 
     $("#dialog").bind("dialogopen", function(e,ui){
-      console.log("Getting info!");
-      $("raw-text").val(getRawCopy());
+      $("#raw-text").val(getRawCopy());
     });
 
 
