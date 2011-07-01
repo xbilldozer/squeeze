@@ -45,15 +45,19 @@ var getRawCopy = function(){
     // Make sure there is valid information in this row...
     if (!isNaN(parseFloat(qty)) && !isNaN(parseFloat(price))) {
       rows += "\n" +
-      " | " + num +
-      " | " + id +
-      " | " + qty +
-      " | " + price +
-      " | " + spent +
-      " | " + (attached ? "Yes" : "No") + 
+      " | Field: " + num +
+      " | Part:" + id +
+      " | Quantity: " + qty +
+      " | Price: $" + price +
+      " | Annual Spend: " + spent +
+      " | Drawing: " + (attached ? "Yes" : "No") + 
       " | ";
     }
   });
+  rows += "\n";
+  rows += "\nPurchase Waste: " + $("#purchase_waste").html();
+  rows += "\nOperational Waste: " + $("#op_waste").html();
+  rows += "\nAnnual Waste: " + $("#total_waste").html();
   return rows;
 };
 
