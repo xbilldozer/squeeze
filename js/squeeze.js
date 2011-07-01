@@ -37,12 +37,13 @@ $(document).ready(function(){
   var getRawCopy = function(){
     var rows = " | # | Part Number | Quantity | Price | Spent | Part Attached? |"
     $("table tbody tr").each(function(idx,row){
-      var num 	    = row.children("td > span.num").html();
-      var id 		    = row.children("td > input.squeeze-id").val();
-      var qty		 	  = row.children("td > input.squeeze-qty").val();
-      var price 		= row.children("td > input.squeeze-price").val();
-      var spent 		= row.children("td > span.squeeze-spent").html();
-      var attached 	= row.children("td > input[type='checkbox']").attr("checked");
+      var $row = $(row);
+      var num 	    = $row.find("td > span.num").html();
+      var id 		    = $row.find("td > input.squeeze-id").val();
+      var qty		 	  = $row.find("td > input.squeeze-qty").val();
+      var price 		= $row.find("td > input.squeeze-price").val();
+      var spent 		= $row.find("td > span.squeeze-spent").html();
+      var attached 	= $row.find("td > input[type='checkbox']").attr("checked");
       // Make sure there is valid information in this row...
       if (!isNaN(parseFloat(qty)) && !isNaN(parseFloat(price))) {
         rows += rows + "\n" +
@@ -79,7 +80,7 @@ $(document).ready(function(){
   
   
   $("#dialog").bind("dialogopen", function(e,ui){
-    $("raw-text").attr("value", getRawCopy());
+    $("raw-text").val(getRawCopy());
   });
   
   
