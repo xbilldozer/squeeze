@@ -1,267 +1,181 @@
 <html>
 <head>
-	<title>Squeeze Page</title>
-	<link href="http://thedietech.com/wp-content/themes/OptimizePress/typography.css" rel="stylesheet" type="text/css"> 
-    <link href="http://thedietech.com/wp-content/themes/OptimizePress/template003-style.css" rel="stylesheet" type="text/css"> 
-
-	<style>
-		span.cufon {margin:2px 0px;}
-		#footer-inside{color:#;}
-		#footer-inside a{color:#;}
-		.footer-right a{color:#;text-decoration:none;font-weight:normal;}
-		.footer-right li:first-child  {border-left:0px solid #;padding-left:0px;}
-		.footer-right li:first-child a {border-left:0px solid #;padding-left:0px;}
-		.footer-right li {color:#;border-left:1px solid #;}
-		.main-preheadline{color:#444444 !important;letter-spacing:-1px;}
-		.main-preheadline em{color:#CC0000 !important;letter-spacing:-1px;} 
-		.main-bottomheadline{color:#CC0000 !important;letter-spacing:-2px;line-height:32px;}
-		.main-bottomheadline em{color:#CC0000 !important;letter-spacing:-2px;line-height:32px;}
-		.main-postheadline{color:#444444 !important;letter-spacing:-1px;}
-		.main-postheadline em{color:#CC0000 !important;letter-spacing:-1px;}
-		.main-headline{color:#CC0000 !important;letter-spacing:-2px;line-height:32px; margin: 10px auto 20px;}
-		.main-headline em{color:#215e8e !important;letter-spacing:-2px;line-height:32px;}
-		div.logo { vertical-align: bottom; margin: 20px auto; width: 529px;}
-		div.logo div { display: inline-block; } 
-		div.logo #logo {background-image:url(http://www.die-tech.com/images/logo.gif); width:197px; height: 62px; background-repeat: no-repeat;}
-		div.logo #tag {font-size: 2.0em; margin-left: 20px; line-height: 1.0em;}
-		#maintopbar{background-color:#;}
-		#footer{background-color:#;}
-		#salesCopy h3 { text-align: center; display: block;}
-		a {color:#0000ff;text-decoration:none;}
-		body{font-family:Arial, Helvetica, Sans-serif;background-image:none;}
-		.waste-report {margin: 15px auto; width: 700px; padding: 15px 0; text-align: center;}
-		.waste-report div {margin: 0; width: 200px; display: inline-block; vertical-align: top; text-align: center;}
-		.waste-report div span:first-child {font-weight: bold; }
-		.waste-report div span:last-child {border: 1px solid #aaa; padding: 2px 4px 4px; width: 100px; height: 1em; display: block; margin: 5px auto;}
-		.waste-report div:last-child span:last-child { border-color: red; }
-		.clearfix {display: block; }
-		input[type="text"]{border: 1px solid #aaa;}
-		div#instructions {margin: 10px auto 40px; width: 70%;}
-		table#squeeze-table { width: 700px; margin: 0 auto; }
-		table thead tr th { padding: 2px 10px; width: 100px; font-size: 0.85em; }
-		table thead tr th:first-child { text-align: right; width: 65px;}
-		table thead tr th.example { font-size: 0.70em; font-weight: light; }
-		table tbody tr td { padding: 2px 10px; }
-		table tbody tr td:first-child { font-weight: bold; text-align: right; }
-		table tbody tr td:last-child { text-align: center; }
-		table tbody tr td:nth-child(5) span { border: 1px solid red; width: 100%; display: block; height: 1em; padding: 1px; }
-		input[type="text"] { width: 100px; }
-
-	</style>
-
+  <title>Squeeze Page</title>
+  <link href="http://thedietech.com/wp-content/themes/OptimizePress/typography.css" rel="stylesheet" type="text/css"> 
+  <link href="http://thedietech.com/wp-content/themes/OptimizePress/template003-style.css" rel="stylesheet" type="text/css"> 
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css">
+  <link href="style/squeeze.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
 </head>
 <body>
-	<div id="maintopbar"></div> 
-	<div style="height:33px;background-image:url(http://thedietech.com/wp-content/themes/OptimizePress/images/template003-bk.gif);
-		background-repeat:repeat-x;"></div> 
-	<div id="wrapper"> 
-		<h1 class="main-headline">Custom Stamping Waste Analysis</h1>
-		<div class="warningbox"> 
-			<h2 class="main-preheadline">Don't waste time and money in your metal stamping and connector design...</h2>
-		</div> 
-		<br /> 
-		<div id="salesCopy">
-			<h1 class="main-headline">&quot;95% of automotive electronic sensor manufacturers that buy custom metal stampings are overpaying!&quot;</h1> 
-			<h3>Find out if your company is one of them by using this FREE Custom Stamping Waste Analysis.</h3>
-		</div>
-		<div class="dividerbar"></div>
-		<div id="instructions">
-			<h2>Instructions</h2>
-			<ol>
-				<li>Populate each cell with appropriate information</li>
-				<li>If you would like die-tech to confirm your waste:<br> Click "File", "Send & Save", "Send Using Email", "Send As Attachment",<br> and send to <span class="email"></span></li>
-				<li>Attach CAD File Part Models and Drawings for each product to the email.</li>
-			</ol>
-		</div>
-		<table id="squeeze-table">
-			<thead>
-				<tr>
-					<th>Item</th>
-					<th>Product ID</th>
-					<th>Annual Quantity Purchased</th>
-					<th>Total Current Unit Price</th>
-					<th>Annual Spend</th>
-					<th>Product Print Attached</th>
-				</tr>
-				<tr>
-					<th class="example">Examples</th>
-					<th class="example">132-345-84F</th>
-					<th class="example">10000</th>
-					<th class="example">3.75</th>
-					<th class="example">37500.00</th>
-					<th class="example"></th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><span class="num">1</span></td>
-					<td><input type="text" name="id_1" id="id_1" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_1" id="qty_1" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_1" id="price_1" class="squeeze-price" /></td>
-					<td><span id="spent_1" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_1" id="attached_1" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">2</span></td>
-					<td><input type="text" name="id_2" id="id_2" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_2" id="qty_2" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_2" id="price_2" class="squeeze-price" /></td>
-					<td><span id="spent_2" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_2" id="attached_2" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">3</span></td>
-					<td><input type="text" name="id_3" id="id_3" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_3" id="qty_3" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_3" id="price_3" class="squeeze-price" /></td>
-					<td><span id="spent_3" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_3" id="attached_3" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">4</span></td>
-					<td><input type="text" name="id_4" id="id_4" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_4" id="qty_4" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_4" id="price_4" class="squeeze-price" /></td>
-					<td><span id="spent_4" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_4" id="attached_4" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">5</span></td>
-					<td><input type="text" name="id_5" id="id_5" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_5" id="qty_5" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_5" id="price_5" class="squeeze-price" /></td>
-					<td><span id="spent_5" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_5" id="attached_5" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">6</span></td>
-					<td><input type="text" name="id_6" id="id_6" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_6" id="qty_6" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_6" id="price_6" class="squeeze-price" /></td>
-					<td><span id="spent_6" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_6" id="attached_6" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">7</span></td>
-					<td><input type="text" name="id_7" id="id_7" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_7" id="qty_7" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_7" id="price_7" class="squeeze-price" /></td>
-					<td><span id="spent_7" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_7" id="attached_7" /></td>
-				</tr>
-				<tr>
-					<td><span class="num">8</span></td>
-					<td><input type="text" name="id_8" id="id_8" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_8" id="qty_8" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_8" id="price_8" class="squeeze-price" /></td>
-					<td><span id="spent_8" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_8" id="attached_8" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">9</span></td>
-					<td><input type="text" name="id_9" id="id_9" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_9" id="qty_9" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_9" id="price_9" class="squeeze-price" /></td>
-					<td><span id="spent_9" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_9" id="attached_9" /></td>
-				</tr>
-				<tr>			
-					<td><span class="num">10</span></td>
-					<td><input type="text" name="id_10" id="id_10" class="squeeze-id" /></td>
-					<td><input type="text" name="qty_10" id="qty_10" class="squeeze-qty" /></td>
-					<td><input type="text" name="price_10" id="price_10" class="squeeze-price" /></td>
-					<td><span id="spent_10" class="squeeze-spent" /></span></td>
-					<td><input type="checkbox" name="attached_10" id="attached_10" /></td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="clearfix"></div>
-		<!-- this block looks stupid because it's inline-block and there can't be any spaces between the elements -->
-		<div class="waste-report"><div><span>Purchase Waste</span><span name="purchase_waste" id="purchase_waste" class="squeeze-purchase-waste"></span></div><div><span>Operational Waste</span><span name="op_waste" id="op_waste" class="squeeze-operational-waste"></span></div><div><span>Total Waste</span><span name="total_waste" id="total_waste" class="squeeze-total-waste"></span></div></div>
-		<!-- end stupid-looking block -->
-	</div>
-	<div class="logo"><div id="logo"></div><div id="tag">Stamping Ideas into Reality</div></div>
-	<div class="s3divider"></div> 
-	<div class="footer"> 
-		<div id="footer-inside"> 
-			<div class="footer-left">Copyright &copy; 2011 Die-Tech Incorporated	</div> 
-			<div class="footer-right"> 
-				<ul>
-					<li class="page_item page-item-61"><a target="_blank" href="http://thedietech.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li>
-					<li class="page_item page-item-27"><a target="_blank" href="http://thedietech.com/about/download-your-free-9-critical-errors-report/" title="Download Your Free 9 Critical Errors Report!">Download Your Free 9 Critical Errors Report!</a></li> 
-				</ul> 
-			</div> 
-		</div>
-	</div> 
-	<script type='text/javascript' src='http://thedietech.com/wp-includes/js/l10n.js?ver=20101110'></script> 
-	<script type='text/javascript' src='http://thedietech.com/wp-content/themes/OptimizePress/js/js_cookie.js?ver=1.0'></script> 
-	<script type="text/javascript" src="http://thedietech.com/wp-content/themes/OptimizePress/js/cufon-yui.js"></script> 
-	<script type="text/javascript" src="http://thedietech.com/wp-content/themes/OptimizePress/js/qtobject.js"></script> 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<script type="text/javascript">
+  <div id="maintopbar"></div> 
+  <div style="height:33px;background-image:url(http://thedietech.com/wp-content/themes/OptimizePress/images/template003-bk.gif);
+  background-repeat:repeat-x;"></div> 
+  <div id="wrapper"> 
+    <h1 class="main-headline">Custom Stamping Waste Analysis</h1>
+    <div class="warningbox"> 
+      <h2 class="main-preheadline">Don't overpay for custom metal stampings</h2>
+    </div> 
+    <br /> 
+    <div id="salesCopy">
+      <h1 class="main-headline">&quot;95% of automotive electronic sensor manufacturers that buy custom metal stampings are overpaying!&quot;</h1> 
+      <h3>Find out if your company is one of them by using this<br />Custom Stamping Waste Analysis for FREE.</h3>
+    </div>
+    <div class="dividerbar"></div>
+    <div id="instructions">
+      <h2>Instructions</h2>
+      <ol>
+        <li>Populate each cell with your information to see instant results</li>
+        <li>If you would like die-tech to confirm your waste:
+          <ul>
+            <li>Once you have completed the form, compose an email to: <span class="email"></span></li>
+            <li>Copy and paste <span id="raw-copy">this information</span> into the email</li>
+            <li>Attach CAD File Part Models and Drawings for each product to the email.</li>
+          </ul>        
+      </ol>
+    </div>
+    <table id="squeeze-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Product ID</th>
+          <th>Annual Quantity Purchased</th>
+          <th>Total Current Unit Price</th>
+          <th>Annual Spend</th>
+          <th>Product Print Attached</th>
+        </tr>
+        <tr>
+          <th class="example">Examples</th>
+          <th class="example">132-345-84F</th>
+          <th class="example">10000</th>
+          <th class="example">3.75</th>
+          <th class="example">37500.00</th>
+          <th class="example"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="num">1</span></td>
+          <td><input type="text" name="id_1" id="id_1" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_1" id="qty_1" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_1" id="price_1" class="squeeze-price" /></td>
+          <td><span id="spent_1" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_1" id="attached_1" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">2</span></td>
+          <td><input type="text" name="id_2" id="id_2" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_2" id="qty_2" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_2" id="price_2" class="squeeze-price" /></td>
+          <td><span id="spent_2" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_2" id="attached_2" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">3</span></td>
+          <td><input type="text" name="id_3" id="id_3" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_3" id="qty_3" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_3" id="price_3" class="squeeze-price" /></td>
+          <td><span id="spent_3" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_3" id="attached_3" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">4</span></td>
+          <td><input type="text" name="id_4" id="id_4" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_4" id="qty_4" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_4" id="price_4" class="squeeze-price" /></td>
+          <td><span id="spent_4" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_4" id="attached_4" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">5</span></td>
+          <td><input type="text" name="id_5" id="id_5" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_5" id="qty_5" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_5" id="price_5" class="squeeze-price" /></td>
+          <td><span id="spent_5" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_5" id="attached_5" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">6</span></td>
+          <td><input type="text" name="id_6" id="id_6" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_6" id="qty_6" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_6" id="price_6" class="squeeze-price" /></td>
+          <td><span id="spent_6" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_6" id="attached_6" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">7</span></td>
+          <td><input type="text" name="id_7" id="id_7" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_7" id="qty_7" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_7" id="price_7" class="squeeze-price" /></td>
+          <td><span id="spent_7" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_7" id="attached_7" /></td>
+        </tr>
+        <tr>
+          <td><span class="num">8</span></td>
+          <td><input type="text" name="id_8" id="id_8" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_8" id="qty_8" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_8" id="price_8" class="squeeze-price" /></td>
+          <td><span id="spent_8" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_8" id="attached_8" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">9</span></td>
+          <td><input type="text" name="id_9" id="id_9" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_9" id="qty_9" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_9" id="price_9" class="squeeze-price" /></td>
+          <td><span id="spent_9" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_9" id="attached_9" /></td>
+        </tr>
+        <tr>			
+          <td><span class="num">10</span></td>
+          <td><input type="text" name="id_10" id="id_10" class="squeeze-id" /></td>
+          <td><input type="text" name="qty_10" id="qty_10" class="squeeze-qty" /></td>
+          <td><input type="text" name="price_10" id="price_10" class="squeeze-price" /></td>
+          <td><span id="spent_10" class="squeeze-spent" /></span></td>
+          <td><input type="checkbox" name="attached_10" id="attached_10" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="clearfix"></div>
+    <!-- this block looks stupid because it's inline-block and there can't be any spaces between the elements -->
+    <div class="waste-report"><div><span>Purchase Waste</span><span name="purchase_waste" id="purchase_waste" class="squeeze-purchase-waste"></span></div><div><span>Operational Waste</span><span name="op_waste" id="op_waste" class="squeeze-operational-waste"></span></div><div><span>Total Waste</span><span name="total_waste" id="total_waste" class="squeeze-total-waste"></span></div></div>
+    <!-- end stupid-looking block -->
+  </div>
+  <div class="logo"><div id="logo"></div><div id="tag">Stamping Ideas into Reality</div></div>
+  <div class="s3divider"></div> 
+  <div class="footer"> 
+    <div id="footer-inside"> 
+      <div class="footer-left">Copyright &copy; 2011 Die-Tech Incorporated	</div> 
+      <div class="footer-right"> 
+        <ul>
+          <li class="page_item page-item-61"><a target="_blank" href="http://thedietech.com/privacy-policy/" title="Privacy Policy">Privacy Policy</a></li>
+          <li class="page_item page-item-27"><a target="_blank" href="http://thedietech.com/about/download-your-free-9-critical-errors-report/" title="Download Your Free 9 Critical Errors Report!">Download Your Free 9 Critical Errors Report!</a></li> 
+        </ul> 
+      </div> 
+    </div>
+  </div> 
+  <div id="dialog">
+    <textarea id="raw-text"></textarea>
+    <div class="reminder">Please remember to attach your CAD designs to the email!</span>
+  </div>
+  
+  <script type='text/javascript' src='http://thedietech.com/wp-includes/js/l10n.js?ver=20101110'></script> 
+  <script type='text/javascript' src='http://thedietech.com/wp-content/themes/OptimizePress/js/js_cookie.js?ver=1.0'></script> 
+  <script type="text/javascript" src="http://thedietech.com/wp-content/themes/OptimizePress/js/cufon-yui.js"></script> 
+  <script type="text/javascript" src="http://thedietech.com/wp-content/themes/OptimizePress/js/qtobject.js"></script> 
+  <script type="text/javascript" src="http://thedietech.com/wp-content/themes/OptimizePress/js/combinebottom.js"></script> 
+  <script type="text/javascript" src="./js/squeeze.js"></script>
 
-		var changeSqueeze = function(){
-			var validColumnsCount = 0;
-			var columnTotal = 0.0;
-
-			$(".squeeze-qty").each(function(idx,el){
-				var $el = $(el);
-				var tr = $el.closest("tr");
-				var price = parseFloat(tr.find("td > input.squeeze-price").val());
-				var quantity = parseFloat($el.val());
-				if(!isNaN(price) && !isNaN(quantity) && quantity != 0 && price != 0 ){
-					// Okay, were're good here!
-					validColumnsCount++;
-					columnTotal += (parseFloat(price) * parseFloat(quantity));
-				}
-			});
-			if (validColumnsCount > 0){ // Make sure we have some valid columns before we go doing anything here...
-				var purchaseWaste = (parseFloat(validColumnsCount)*20000.00);
-				var operationWaste = (columnTotal * 0.1);
-				$("#purchase_waste").html("$" + purchaseWaste.toFixed(2));
-				$("#op_waste").html("$" + operationWaste.toFixed(2));
-				$("#total_waste").html("$" + (purchaseWaste + operationWaste).toFixed(2));
-			} else {
-				$("#purchase_waste").html("");
-				$("#op_waste").html("");
-				$("#total_waste").html("");
-			}
-		}
-
-		$(document).ready(function(){
-			$("span.email").each(function(idx,el){ // Populate email links
-				$(el).append("<a href='mailto:rwdennis@die-tech.com'>rwdennis@die-tech.com</a>")
-			});
-
-			$(".squeeze-qty, .squeeze-price").live("change", function(e){ // Watch input cells
-				var changed = $(this);
-				var tr = changed.closest("tr");
-				var quantity = tr.find("td > input.squeeze-qty").val();
-				var price = tr.find("td > input.squeeze-price").val();
-				var spendSpan = tr.find("td > span.squeeze-spent");
-				var spend = (parseFloat(quantity) * parseFloat(price)).toFixed(2);
-				if (isNaN(spend)) {
-					spendSpan.html("");
-					return;
-				}
-				spendSpan.html("$" + spend);
-				changeSqueeze();
-			});
-
-		});
-
-	</script>
-</body> 
- 
-<script type="text/javascript" src="http://thedietech.com/wp-content/themes/OptimizePress/js/combinebottom.js"></script> 
- 
-<script type="text/javascript"> 
-	Cufon.replace('.main-preheadline', { fontFamily: 'Arial' });
-	Cufon.replace('.main-headline', { fontFamily: 'Arial' });
+  <script type="text/javascript"> 
+    Cufon.replace('.main-preheadline', { fontFamily: 'Arial' });
+    Cufon.replace('.main-headline', { fontFamily: 'Arial' });
     Cufon.replace('.main-postheadline', { fontFamily: 'Arial' });	
-	Cufon.replace('.main-bottomheadline', { fontFamily: 'Arial' });
-Cufon.replace('.sidebar-headline', { fontFamily: 'Tahoma' });
-Cufon.replace('#launchcommentstext', { fontFamily: 'Hand Of Sean' });
-</script> 
+    Cufon.replace('.main-bottomheadline', { fontFamily: 'Arial' });
+    Cufon.replace('.sidebar-headline', { fontFamily: 'Tahoma' });
+    Cufon.replace('#launchcommentstext', { fontFamily: 'Hand Of Sean' });
+  </script> 
+  
+  
 </body>
 </html>

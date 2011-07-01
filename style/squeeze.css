@@ -1,0 +1,48 @@
+span.cufon {margin:2px 0px;}
+.footer-right a{text-decoration:none;font-weight:normal;}
+.footer-right li:first-child  {border-left-width:0px;border-left-style:solid;padding-left:0px;}
+.footer-right li:first-child a {border-left-width:0px;border-left-style:solid;padding-left:0px;}
+.footer-right li {border-width:1px;border-style:solid;}
+
+.main-preheadline{color:#444444 !important;letter-spacing:-1px; font-size: 2.0em; padding-top: 30px;}
+.main-preheadline em{color:#CC0000 !important;letter-spacing:-1px;} 
+
+.main-bottomheadline{color:#CC0000 !important;letter-spacing:-2px;line-height:32px;}
+.main-bottomheadline em{color:#CC0000 !important;letter-spacing:-2px;line-height:32px;}
+
+.main-postheadline{color:#444444 !important;letter-spacing:-1px;}
+.main-postheadline em{color:#CC0000 !important;letter-spacing:-1px;}
+
+.main-headline{color:#CC0000 !important;letter-spacing:-2px;line-height:32px; margin: 10px auto 20px;}
+.main-headline em{color:#215e8e !important;letter-spacing:-2px;line-height:32px;}
+
+div.logo { vertical-align: bottom; margin: 20px auto; width: 529px;}
+div.logo div { display: inline-block; } 
+div.logo #logo {background-image:url(http://www.die-tech.com/images/logo.gif); width:197px; height: 62px; background-repeat: no-repeat;}
+div.logo #tag {font-size: 2.0em; margin-left: 20px; line-height: 1.0em;}
+#maintopbar{}
+#footer{}
+#salesCopy h3 { text-align: center; display: block; font-size: 1.75em;}
+a {color:#0000ff;text-decoration:none;}
+body{font-family:Arial, Helvetica, Sans-serif;background-image:none;}
+.waste-report {margin: 15px auto; width: 700px; padding: 15px 0; text-align: center;}
+.waste-report div {margin: 0; width: 200px; display: inline-block; vertical-align: top; text-align: center;}
+.waste-report div span:first-child {font-weight: bold; }
+.waste-report div span:last-child {border: 1px solid #aaa; padding: 2px 4px 4px; width: 100px; height: 1em; display: block; margin: 5px auto;}
+.waste-report div:last-child span:last-child { border-color: red; }
+.clearfix {display: block; }
+input[type="text"]{border: 1px solid #aaa;}
+div#instructions {margin: 10px auto 40px; width: 70%;}
+table#squeeze-table { width: 700px; margin: 0 auto; }
+table thead tr th { padding: 2px 10px; width: 100px; font-size: 0.85em; }
+table thead tr th:first-child { text-align: right; width: 65px;}
+table thead tr th.example { font-size: 0.70em; font-weight: lighter; }
+table tbody tr td { padding: 2px 10px; }
+table tbody tr td:first-child { font-weight: bold; text-align: right; }
+table tbody tr td:last-child { text-align: center; }
+table tbody tr td:nth-child(5) span { border: 1px solid red; width: 100%; display: block; height: 1em; padding: 1px; }
+input[type="text"] { width: 100px; }
+
+#dialog{display: none;}
+#dialog textarea#raw-text{width: 100%;height:200px;resize: none;}
+#dialog div.reminder{font-weight:bold;font-size:1.1em;color:red;padding:23px 0 0;text-align:center;}
