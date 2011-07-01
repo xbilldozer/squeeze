@@ -33,7 +33,7 @@ var changeSqueeze = function(){
 };
 
 var getRawCopy = function(){
-  var rows = " | # | Part Number | Quantity | Price | Spent | Part Attached? | ";
+  var rows = "";
   $("table tbody tr").each(function(idx,row){
     var $row = $(row);
     var num 	    = $row.find("td > span.num").html();
@@ -77,7 +77,7 @@ $(document).ready(function(){
       modal: true, 
       position: 'center', 
       title: 'Copy and paste this into your email',
-      width: 500,
+      width: 700,
       height: 300,
       resizable: false,
       autoOpen: false

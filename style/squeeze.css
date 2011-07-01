@@ -1,8 +1,6 @@
 span.cufon {margin:2px 0px;}
+.footer{padding-top:60px;}
 .footer-right a{text-decoration:none;font-weight:normal;}
-.footer-right li:first-child  {border-left-width:0px;border-left-style:solid;padding-left:0px;}
-.footer-right li:first-child a {border-left-width:0px;border-left-style:solid;padding-left:0px;}
-.footer-right li {border-width:1px;border-style:solid;}
 
 .main-preheadline{color:#444444 !important;letter-spacing:-1px; font-size: 2.0em; padding-top: 30px;}
 .main-preheadline em{color:#CC0000 !important;letter-spacing:-1px;} 
@@ -16,10 +14,8 @@ span.cufon {margin:2px 0px;}
 .main-headline{color:#CC0000 !important;letter-spacing:-2px;line-height:32px; margin: 10px auto 20px;}
 .main-headline em{color:#215e8e !important;letter-spacing:-2px;line-height:32px;}
 
-div.logo { vertical-align: bottom; margin: 20px auto; width: 529px;}
-div.logo div { display: inline-block; } 
-div.logo #logo {background-image:url(http://www.die-tech.com/images/logo.gif); width:197px; height: 62px; background-repeat: no-repeat;}
-div.logo #tag {font-size: 2.0em; margin-left: 20px; line-height: 1.0em;}
+div.logo { vertical-align: bottom; margin: 20px auto 0; width: 700px;}
+div.logo #logo { text-align: right; }
 #maintopbar{}
 #footer{}
 #salesCopy h3 { text-align: center; display: block; font-size: 1.75em;}
