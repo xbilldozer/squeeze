@@ -69,7 +69,6 @@ $(document).ready(function(){
   });
 
 
-  (function(){
     var copyLink = $("#raw-copy");
     var text = copyLink.html();
 
@@ -94,7 +93,6 @@ $(document).ready(function(){
       e.preventDefault();
       $("#dialog").dialog("open");
     });
-  })();
 
   // This is the listener for calculations
   $(".squeeze-qty, .squeeze-price").live("change", function(e){ // Watch input cells
