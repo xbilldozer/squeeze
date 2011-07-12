@@ -26,9 +26,10 @@ a {color:#0000ff;text-decoration:none;}
 body{font-family:Arial, Helvetica, Sans-serif;background-image:none;}
 .waste-report {margin: 15px auto; width: 696px; padding: 20px 0; text-align: center; background: #fee; border: 2px solid red;}
 .waste-report div {margin: 0; width: 200px; display: inline-block; vertical-align: top; text-align: center;}
-.waste-report div span:first-child {font-weight: bold; font-size: 1.5em;}
-.waste-report div span:last-child {border: 4px solid #aaa; padding: 2px 4px 4px; width: 120px; height: 1em; display: block; margin: 5px auto; background: white;}
-.waste-report div:last-child span:last-child { border-color: red; font-weight: bold; color: red; font-size: 1.5em; height: 1.5em; line-height: 1.5em}
+.waste-report div span:first-child {font-weight: bold; font-size: 1.70em; display: inline-block; height: 45px;}
+.waste-report div span:last-child {border: 4px solid #aaa; padding: 2px 4px 4px; width: 120px; height: 1em; display: block; margin: 10px auto 5px; background: white; font-size: 1.5em; font-weight: bold;}
+.waste-report div:last-child span:first-child {font-weight: bold; font-size: 2em;}
+.waste-report div:last-child span:last-child { border-color: red; font-weight: bold; color: red; font-size: 1.75em; height: 1.75em; line-height: 1.85em; width: 150px;}
 .clearfix {display: block; }
 input[type="text"]{border: 1px solid #aaa;}
 div#instructions {margin: 10px auto 40px; width: 70%;}
